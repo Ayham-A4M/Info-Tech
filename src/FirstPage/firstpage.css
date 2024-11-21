@@ -1,0 +1,33 @@
+.GetProCard{
+    overflow: hidden;
+    z-index: 11;
+    position: relative;
+   
+}
+.GetProCard::before{
+    content: "";
+    position: absolute;
+    width:300%;
+    height:300%;
+    border-radius:50%;
+    
+    background-color: rgba(77, 77, 144, 0.781);
+    top:50%;
+    /* left:50%; */
+    transform: translate(-50%);
+    
+    z-index: 0;
+    /* transform-origin:top left; */
+    animation: waveAnamation 5s infinite alternate linear;
+    
+}
+
+@keyframes waveAnamation{
+    0%{
+        transform: translateX(-50%) skew(0, -8deg);
+       
+    }
+    100%{
+        transform:translateX(-40%) skew(0,5deg);
+    }
+}

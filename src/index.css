@@ -1,0 +1,327 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+    scroll-behavior: smooth;
+}
+.menue{
+    display: none;
+}
+@media (max-width:1060px){
+    .menue{
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+}
+.NavBar{
+    background-color: rgba(48, 63, 126, 0.318);
+
+}
+.MenuBar li,.link{
+    transition: all;
+    transition-duration:300ms;
+}
+.link:hover{
+    color:white;
+}
+.MenuBar li:hover{
+    color:white;
+}
+.HomePage{
+    background: url(../images/background1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.iconGet{
+    background-image: linear-gradient(20deg, rgb(160, 83, 237), 20%,rgb(71, 0, 97));
+}
+.container-img{
+    transition: all;
+    min-width: 300px;
+    
+    animation: up-down 2s linear infinite alternate;
+
+}
+.wave{
+    background:url(../images/sectionTopSvg2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+}
+
+.page{
+    position: relative;
+    background-color:#6200ea;
+}
+.thirdPage{
+    background-color:#6200ea;
+}
+.certifecate{
+    background-color:#6200ea;
+}
+.fourthPage{
+    background-color: #6200ea;
+}
+.fifthPage{
+    background-color: #6200ea;
+}
+
+.cube{
+    animation: rotateCube 8s linear infinite alternate;
+}
+.removeScroll{
+    height:calc(100vh-600px);
+    overflow: hidden;
+}
+
+
+.containerOfIcons div:nth-child(1){
+    animation: upDownIcons 900ms ease-in-out infinite alternate;
+}
+.containerOfIcons div:nth-child(2){
+    animation: upDownIcons2 920ms ease-in-out infinite alternate;
+}
+.containerOfIcons div:nth-child(3){
+    animation: upDownIcons3 930ms ease-in-out infinite alternate;
+}
+.containerOfIcons div:nth-child(4){
+    animation: upDownIcons4 940ms ease-in-out infinite alternate;
+}
+.containerOfIcons div:nth-child(5){
+    animation: upDownIcons5 980ms ease-in-out infinite alternate;
+}
+.containerOfIcons div:nth-child(6){
+    animation: upDownIcons6 990ms ease-in-out infinite alternate;
+}
+.containerOfIcons div:nth-child(7){
+    animation: upDownIcons7 1000ms ease-in-out infinite alternate;
+}
+.leftCard .Box:nth-child(1){
+    background-image: linear-gradient(385deg, rgba(209, 60, 250, 0.942),40%,rgba(249, 213, 67, 0.866));
+}
+.rightCard .Box:nth-child(1){
+    background-image: linear-gradient(385deg, rgba(0, 115, 255, 0.942),40%,rgba(37, 150, 241, 0.866));
+}
+/* small cards  */
+.SecondCardsContainer .card:nth-child(1) .boxCard{
+    background-image: linear-gradient(385deg, rgba(125, 79, 252, 0.699),50%,rgba(179, 28, 255, 0.896));
+    box-shadow:0px 15px 35px -12px rgba(125, 79, 252, 0.699);
+    
+}
+.SecondCardsContainer .card:nth-child(2) .boxCard{
+    background-image: linear-gradient(385deg, rgba(0, 75, 167, 0.942),40%,rgba(37, 150, 241, 0.866));
+    box-shadow:0px 15px 35px -12px rgba(0, 75, 167, 0.942);
+}
+.SecondCardsContainer .card:nth-child(3) .boxCard{
+    background-image: linear-gradient(385deg, rgba(40, 225, 197, 0.942),60%,rgb(22, 121, 202));
+    box-shadow:0px 15px 35px -12px rgba(40, 225, 197, 0.942);
+}
+.SecondCardsContainer .card:nth-child(4) .boxCard{
+    background-image: linear-gradient(385deg, rgba(209, 60, 250, 0.942),40%,rgba(249, 213, 67, 0.866));
+    box-shadow:0px 15px 35px -12px rgba(209, 60, 250, 0.942);
+}
+.SecondCardsContainer .card:nth-child(5) .boxCard{
+    background-image: linear-gradient(385deg, rgba(212, 67, 249, 0.866),40%,rgba(92, 0, 118, 0.942));
+    box-shadow:0px 15px 35px -12px rgba(212, 67, 249, 0.866);
+}
+.SecondCardsContainer #offerCard{
+    /* transition:transform; */
+    /* transition-duration:250ms; */
+}
+.SecondCardsContainer #offerCard:hover{
+    transition: transform;
+    transition-duration: 250ms;
+    transform: scale(1.04);
+}
+.CUIUX:nth-child(1){
+    background-image: linear-gradient(385deg, rgba(0, 73, 73, 0.616),40%,rgba(0, 87, 118, 0.436));
+}
+.CUIUX:nth-child(2){
+    background-image: linear-gradient(385deg, rgba(209, 60, 250, 0.551),40%,rgba(249, 212, 67, 0.523));
+}
+.browse{
+    
+    animation: leftRight 1900ms  linear 1s infinite alternate;
+}
+@keyframes leftRight{
+
+    50%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(5px);
+    }
+}
+
+/* end small cards */
+
+@media(min-width:1600px){
+    .MainCards{
+        flex-direction:row;
+    }
+}
+
+
+/* tutorials cards */
+
+
+.tutorialsSection >div:nth-child(1) .tutCard .underCard{
+    position: absolute;
+    width: 95%;
+    height: 50%;
+    border-radius: 28px;
+    background-color: #fc237a;
+    bottom:0%;
+    transform-origin: left bottom;
+    left: 1px;
+    /* transform: skewY(7deg); */
+    z-index: -1;
+    animation: underCardMove 4s ease-in-out infinite alternate;
+    
+}
+ .tutorialsSection >div:nth-child(2) .tutCard .underCard{
+    position: absolute;
+    width: 95%;
+    height: 50%;
+    border-radius: 28px;
+    background-color: #c002ff;
+    bottom:0%;
+    transform-origin: left bottom;
+    left: 0px;
+    /* transform: skewY(7deg); */
+    z-index: -1;
+    animation: underCardMove 4s ease-in-out infinite alternate;
+    
+}
+
+.fourthPage{
+    background:url(../images/backgroundFourthPage2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reviewCard{
+    box-shadow: 0px 10px 15px 1px rgba(133, 133, 133, 0.395);
+    
+}
+.showMoreStories:hover .commentIcon{
+    
+    animation: commentMove 600ms linear forwards;
+}
+
+
+
+/* subscribe cards */
+.freeCard::before{
+    position: absolute;
+    content: "";
+    width:100%;
+    z-index: -1;
+    right:0;
+    top:0;
+    transform-origin:top left;
+    transform: rotate(-7deg);
+    height:100%;
+    border-radius:0% 11% 11% 11%;
+    /* background-color: #207898; */
+    background-image: linear-gradient(300deg, rgba(25, 50, 127, 0.955),40%,#2d82a1);
+}
+
+.tramCard::before{
+    position: absolute;
+    content: "";
+    width:100%;
+    z-index: -1;
+    right:0;
+    top:0;
+    transform-origin:top right;
+    transform: rotate(7deg);
+    height:100%;
+    border-radius:12% 0% 12% 12%;
+    /* background-color: #207898; */
+    background-image: linear-gradient(0deg,rgba(208, 208, 208, 0.955),40%,#2d5fa1);
+}
+
+
+/* footer */
+.footer li:hover{
+    color: aliceblue;
+}
+
+
+
+
+
+/* animation //// */
+@keyframes commentMove{
+    /* 50%{
+        transform: skewY(-10deg);
+    }
+    100%{
+        transform: skew(0deg);
+    } */
+     100%{
+        transform: rotate(720deg);
+        font-size: 22px;
+     }
+}
+@keyframes underCardMove{
+    50%{
+        transform: skewY(7deg);
+    }
+    100%{
+        transform: skewY(7deg);
+    }
+}
+@keyframes up-down{
+    100%{
+        transform: translateY(25px);
+    }
+}
+@keyframes upDownIcons {
+    100%{
+        transform:translateY(-12px);
+    }
+}
+@keyframes upDownIcons2 {
+    100%{
+        transform:translateY(-10px);
+    }
+}
+@keyframes upDownIcons3 {
+    100%{
+        transform:translateY(-9px);
+    }
+}
+@keyframes upDownIcons4 {
+    100%{
+        transform:translateY(-8px);
+    }
+}
+@keyframes upDownIcons5 {
+    100%{
+        transform:translateY(-7px);
+    }
+}
+@keyframes upDownIcons6 {
+    100%{
+        transform:translateY(-5px);
+    }
+}
+@keyframes upDownIcons7 {
+    100%{
+        transform:translateY(-5px);
+    }
+}
+@keyframes rotateCube{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
