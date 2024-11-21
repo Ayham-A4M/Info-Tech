@@ -4,6 +4,10 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    width:100% !important;
+    overflow-x: hidden !important;
+}
 .menue{
     display: none;
 }

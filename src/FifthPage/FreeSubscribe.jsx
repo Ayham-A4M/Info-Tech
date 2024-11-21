@@ -8,7 +8,7 @@ const FreeSubscribe = ({ contentSubscribe, subscribeButtonInCard, details, price
         Aos.refresh();
     },[])
     return (
-        <div className="w-fit h-fit" data-aos="zoom-out-right">
+        <div className="w-fit h-fit" data-aos="zoom-out">
             <div className="freeCard  h-fit max-[776px]:before:hidden relative px-[80px] py-[50px] rounded-tr-[11%] rounded-b-[11%] bg-slate-900">
                 <div className="flex flex-col gap-[20px] items-center text-slate-300">
                     <span className="text-[15px] text-slate-400">Basic</span>

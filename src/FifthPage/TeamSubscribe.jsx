@@ -13,7 +13,7 @@ const TeamSubscribe = ({ contentSubscribe, subscribeButtonInCard, details, price
         }
     }, [])
     return (
-        <div className="w-fit h-fit" data-aos="zoom-out-left" >
+        <div className="w-fit h-fit" data-aos="zoom-out" >
             <div ref={parentBefore} className="tramCard  max-[776px]:before:hidden h-fit relative px-[40px] py-[50px] rounded-tl-[12%] rounded-b-[12%] bg-slate-900">
                 <div className="flex flex-col gap-[20px] items-center text-slate-300">
                     <span className="text-[15px] text-slate-400">Team</span>
